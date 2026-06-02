@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta 
+    name="description" 
+    content="Task 4 form validation project using HTML, CSS, and JavaScript." 
+  />
+
+  <title>Task 4 | Form Validation</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <main class="page-wrapper">
+
+    <section class="form-section">
+      <div class="form-info">
+        <p class="tagline">Frontend Development Task 4</p>
+        <h1>Registration Form Validation</h1>
+        <p>
+          This project demonstrates form design and validation using HTML, CSS, 
+          and JavaScript. The form checks user input and displays error or success messages.
+        </p>
+      </div>
+
+      <form class="registration-form" id="registrationForm" novalidate>
+        <h2>Create Your Account</h2>
+
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input 
+            type="text" 
+            id="fullName" 
+            name="fullName" 
+            placeholder="Enter your full name"
+          />
+          <small class="error-message" id="nameError"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="Enter your email address"
+          />
+          <small class="error-message" id="emailError"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input 
+            type="tel" 
+            id="phone" 
+            name="phone" 
+            placeholder="Enter your phone number"
+          />
+          <small class="error-message" id="phoneError"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="course">Select Course</label>
+          <select id="course" name="course">
+            <option value="">Choose a course</option>
+            <option value="frontend">Frontend Development</option>
+            <option value="web-design">Web Design</option>
+            <option value="javascript">JavaScript Basics</option>
+          </select>
+          <small class="error-message" id="courseError"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input 
+            type="password" 
+            id="password" 
+            name="password" 
+            placeholder="Create a password"
+          />
+          <small class="error-message" id="passwordError"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input 
+            type="password" 
+            id="confirmPassword" 
+            name="confirmPassword" 
+            placeholder="Confirm your password"
+          />
+          <small class="error-message" id="confirmPasswordError"></small>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Form</button>
+
+        <p class="success-message" id="successMessage"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
